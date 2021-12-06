@@ -1,0 +1,48 @@
+uuid: a40ffcd8-ab7f-453d-aad7-d39a4abdeaf3
+langcode: ru
+status: true
+dependencies:
+  module:
+    - block
+_core:
+  default_config_hash: nU1OPAfeA3n0XjVOQ8RfAnSxyv4iTjZn7yBCj0MH9Jg
+id: block-layout
+label: 'Страница схемы блоков'
+module: block
+routes:
+  -
+    route_name: block.admin_display
+tips:
+  block-layout:
+    id: block-layout
+    plugin: text
+    label: 'Макет блоков'
+    body: 'Блоки - это блоки содержимого, отображаемые в области или области веб-страницы, которые могут отображаться в областях (например, нижнем колонтитуле или боковой панели) на вашей странице.'
+    weight: 1
+  place-block:
+    id: place-block
+    plugin: text
+    label: 'Разместить блоки'
+    body: 'Любой пользовательский или добавленный блок можно добавить в конкретный регион, нажав кнопку «Поместить блок». Новый блок также можно создать, нажав кнопку «Поместить блок».'
+    weight: 2
+    selector: .button--small
+  block-region:
+    id: block-region
+    plugin: text
+    label: 'Регион Блока'
+    body: 'Назначьте или измените регион блока, щелкнув здесь. Появится выпадающий список со всеми регионами. Вы можете разместить один блок в нескольких регионах.'
+    weight: 3
+    selector: .block-region-select
+  configure-block:
+    id: configure-block
+    plugin: text
+    label: 'Настроить блок'
+    body: 'Нажав «Настроить», вы можете продолжить и редактировать содержимое блока, работать с настройками видимости и даже изменять его расположение в вашей теме.'
+    weight: 4
+    selector: .dropbutton-widget
+  custom-block-library:
+    id: custom-block-library
+    plugin: text
+    label: 'Библиотека Пользовательских блоков'
+    body: 'На экране управления блоками также есть еще одна вкладка вверху, которая используется для добавления пользовательских блоков. Название вкладки - «Библиотека пользовательских блоков». Эта вкладка в конечном итоге предоставляет ссылку для добавления пользовательских блоков.'
+    weight: 5

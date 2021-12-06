@@ -1,0 +1,15 @@
+uuid: 8eb22b21-7336-448d-829e-b54d9ea1ad41
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 97tvtzGOa8_flb22CzSjgtm_YkiGMHvEBO-6q2K9V_U
+id: node_search
+label: Содержимое
+path: node
+weight: -10
+plugin: node_search
+configuration:
+  rankings: {  }

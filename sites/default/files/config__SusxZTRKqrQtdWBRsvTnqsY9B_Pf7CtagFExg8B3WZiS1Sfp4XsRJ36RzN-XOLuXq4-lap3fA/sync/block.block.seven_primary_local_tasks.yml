@@ -1,0 +1,22 @@
+uuid: 3b727e0a-c8e7-4cc0-b483-c89242a923d4
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - seven
+_core:
+  default_config_hash: ddy1OsBbWxjwEI8VL1viD4I69qcLHOkul4BxbTqLBTs
+id: seven_primary_local_tasks
+theme: seven
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Главные вкладки'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

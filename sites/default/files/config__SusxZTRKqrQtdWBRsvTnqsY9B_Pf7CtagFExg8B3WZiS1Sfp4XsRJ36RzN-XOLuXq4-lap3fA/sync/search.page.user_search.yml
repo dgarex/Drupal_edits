@@ -1,0 +1,14 @@
+uuid: 2a0c8d92-ee17-4b2a-b72a-4dfe9b8d9fa6
+langcode: ru
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: k3aUaZXGDuhkek2TZIee0PApOPTvYZLadziekdyHA5A
+id: user_search
+label: Пользователи
+path: user
+weight: 0
+plugin: user_search
+configuration: {  }
