@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.categories.field_image
+    - field.field.taxonomy_term.categories.field_min_price
+    - field.field.taxonomy_term.categories.field_short_description
+    - field.field.taxonomy_term.categories.layout_builder__layout
     - taxonomy.vocabulary.categories
   module:
     - media_library
@@ -28,6 +31,21 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
+    region: content
+  field_min_price:
+    weight: 103
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_short_description:
+    weight: 102
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   langcode:
     type: language_select
@@ -57,4 +75,5 @@ content:
     weight: 100
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  layout_builder__layout: true

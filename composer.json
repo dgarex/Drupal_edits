@@ -21,6 +21,7 @@
         "drupal/core-recommended": "^9.2",
         "drupal/core-vendor-hardening": "^9.2",
         "drupal/devel": "^4.1",
+        "drupal/lock_layout_builder": "^1.1",
         "drupal/pathauto": "^1.8",
         "drush/drush": "^10.6"
     },

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains lock_layout_builder.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function lock_layout_builder_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the lock_layout_builder module.
+    case 'help.page.lock_layout_builder':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Allows user to lock sections and blocks, so user cannot perform any operations(add/edit/move/remove).') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -1835,6 +1835,69 @@
             "install-path": "../doctrine/reflection"
         },
         {
+            "name": "drupal/content_lock",
+            "version": "2.2.0",
+            "version_normalized": "2.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/content_lock.git",
+                "reference": "8.x-2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/content_lock-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "9ea5810067c0df18879a16a19236e0cb46f9fba7"
+            },
+            "require": {
+                "drupal/core": "^8.8|^9.0"
+            },
+            "require-dev": {
+                "drupal/conflict": "^2.0@ALPHA",
+                "drupal/prefetch_cache": "dev-1.x"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.2",
+                    "datestamp": "1607936866",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "chr.fritsch",
+                    "homepage": "https://www.drupal.org/user/2103716"
+                },
+                {
+                    "name": "ergonlogic",
+                    "homepage": "https://www.drupal.org/user/368613"
+                },
+                {
+                    "name": "mfb",
+                    "homepage": "https://www.drupal.org/user/12302"
+                },
+                {
+                    "name": "pandaski",
+                    "homepage": "https://www.drupal.org/user/1987218"
+                }
+            ],
+            "description": "Prevents multiple users from trying to edit a content entity simultaneously to prevent edit conflicts.",
+            "homepage": "https://www.drupal.org/project/content_lock",
+            "support": {
+                "source": "https://git.drupalcode.org/project/content_lock"
+            },
+            "install-path": "../../modules/contrib/content_lock"
+        },
+        {
             "name": "drupal/core",
             "version": "9.2.10",
             "version_normalized": "9.2.10.0",
@@ -2468,6 +2531,54 @@
                 "slack": "https://drupal.slack.com/archives/C012WAW1MH6"
             },
             "install-path": "../../modules/contrib/devel"
+        },
+        {
+            "name": "drupal/lock_layout_builder",
+            "version": "1.1.1",
+            "version_normalized": "1.1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/lock_layout_builder.git",
+                "reference": "1.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/lock_layout_builder-1.1.1.zip",
+                "reference": "1.1.1",
+                "shasum": "8d1f071a62a56426ee2b6b6b5b6ec7a691949f26"
+            },
+            "require": {
+                "drupal/content_lock": "*",
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.1.1",
+                    "datestamp": "1615053583",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "rksyravi",
+                    "homepage": "https://www.drupal.org/user/3402584"
+                }
+            ],
+            "description": "Allows user to lock sections and blocks, so user cannot perform any operations(add/edit/move/remove).",
+            "homepage": "https://www.drupal.org/project/lock_layout_builder",
+            "support": {
+                "source": "https://git.drupalcode.org/project/lock_layout_builder"
+            },
+            "install-path": "../../modules/contrib/lock_layout_builder"
         },
         {
             "name": "drupal/pathauto",

@@ -4,29 +4,75 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.categories.field_image
+    - field.field.taxonomy_term.categories.field_min_price
+    - field.field.taxonomy_term.categories.field_short_description
+    - field.field.taxonomy_term.categories.layout_builder__layout
     - taxonomy.vocabulary.categories
   module:
-    - text
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          0e87fa98-f864-4e60-a306-41af91534323:
+            uuid: 0e87fa98-f864-4e60-a306-41af91534323
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:categories:field_short_description'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 1
+          221292c7-fc86-46af-a6dd-e5f468e6a184:
+            uuid: 221292c7-fc86-46af-a6dd-e5f468e6a184
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:categories:name'
+              label: Name
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
 id: taxonomy_term.categories.default
 targetEntityType: taxonomy_term
 bundle: categories
 mode: default
 content:
-  description:
-    label: hidden
-    type: text_default
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_image:
-    type: entity_reference_entity_view
-    weight: 1
+  field_short_description:
+    weight: 2
     label: above
     settings:
-      view_mode: default
-      link: false
+      link_to_entity: false
     third_party_settings: {  }
+    type: string
     region: content
 hidden:
+  description: true
+  field_image: true
+  field_min_price: true
   langcode: true
+  layout_builder__layout: true

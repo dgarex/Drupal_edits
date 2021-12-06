@@ -1,0 +1,15 @@
+uuid: 25af25b5-4e4f-4220-9d45-a697ed59cd40
+langcode: ru
+status: true
+dependencies: {  }
+name: '380_364'
+label: '380 364'
+effects:
+  831ca739-dbd4-4514-9b81-965e414f9458:
+    uuid: 831ca739-dbd4-4514-9b81-965e414f9458
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 380
+      height: 364
+      anchor: center-center

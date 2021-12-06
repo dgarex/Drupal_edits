@@ -1,0 +1,14 @@
+name: 'Lock Layout Builder'
+type: module
+description: 'Allows user to lock sections and blocks, so user cannot perform any operations(add/edit/move/remove).'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Content'
+dependencies:
+  - drupal:layout_builder
+  - content_lock:content_lock
+
+# Information added by Drupal.org packaging script on 2021-03-06
+version: '1.1.1'
+project: 'lock_layout_builder'
+datestamp: 1615053584

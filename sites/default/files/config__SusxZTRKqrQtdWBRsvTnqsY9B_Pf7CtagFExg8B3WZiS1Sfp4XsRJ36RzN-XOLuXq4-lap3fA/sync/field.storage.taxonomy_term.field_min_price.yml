@@ -1,0 +1,18 @@
+uuid: 85847ced-f571-42df-9051-5ec126fe51e0
+langcode: ru
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_min_price
+field_name: field_min_price
+entity_type: taxonomy_term
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

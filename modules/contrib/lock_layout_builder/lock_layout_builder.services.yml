@@ -1,0 +1,10 @@
+services:
+  lock_layout_builder.route_subscriber:
+    class: Drupal\lock_layout_builder\Routing\LockLayoutBuilderRouteSubscriber
+    tags:
+      - { name: event_subscriber }
+  lock_layout_builder.access_check:
+    class: Drupal\lock_layout_builder\Access\LockLayoutBuilderAccessCheck
+    arguments: ['@language_manager', '@content_lock']
+    tags:
+      - { name: access_check, applies_to: _lock_layout_builder_access }
