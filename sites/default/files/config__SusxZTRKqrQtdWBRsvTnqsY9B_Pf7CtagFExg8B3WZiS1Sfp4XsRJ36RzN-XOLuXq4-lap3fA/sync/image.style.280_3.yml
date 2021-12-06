@@ -1,0 +1,15 @@
+uuid: c834d666-9dfd-4725-b759-14c5a3cdb7b5
+langcode: ru
+status: true
+dependencies: {  }
+name: '280_3'
+label: '280 360'
+effects:
+  5355facf-ba61-465e-bcf1-12259d69946e:
+    uuid: 5355facf-ba61-465e-bcf1-12259d69946e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 280
+      height: 360
+      anchor: center-center

@@ -1,0 +1,27 @@
+uuid: 51928c16-c55f-4d79-b8e0-3c4ab390e41c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_test
+    - node.type.room
+  module:
+    - file
+id: node.room.field_test
+field_name: field_test
+entity_type: node
+bundle: room
+label: test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: txt
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

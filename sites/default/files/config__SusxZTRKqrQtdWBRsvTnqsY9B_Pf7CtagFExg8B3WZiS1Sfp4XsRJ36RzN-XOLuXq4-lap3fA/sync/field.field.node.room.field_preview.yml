@@ -1,0 +1,29 @@
+uuid: 1aa30335-81bd-4fd2-96a7-64b5446908e3
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_preview
+    - media.type.image
+    - node.type.room
+id: node.room.field_preview
+field_name: field_preview
+entity_type: node
+bundle: room
+label: Preview
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

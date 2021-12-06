@@ -1,0 +1,18 @@
+uuid: 348c37f2-c0d5-49cb-b8f3-084e0e2d8a28
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Room
+type: room
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,8 @@
+uuid: 209adef0-0c8d-47da-8cb4-df8a5d8a9d17
+langcode: ru
+status: true
+dependencies: {  }
+name: Categories
+vid: categories
+description: ''
+weight: 0
